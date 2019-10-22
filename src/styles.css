@@ -212,6 +212,7 @@
   footer {
     margin-top: 8px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     line-height: 20px;
   }

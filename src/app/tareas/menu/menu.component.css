@@ -1,0 +1,9 @@
+nav {
+  background-color: #1976d2;
+}
+a {
+  display: inline-block;
+  padding: 2rem;
+  text-decoration: none;
+  color: white;
+}
