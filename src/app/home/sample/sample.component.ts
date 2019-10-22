@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'alt-sample',
@@ -10,7 +11,7 @@ export class SampleComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.title = 'Altran';
+    this.title = environment.titulo;
   }
 
 }
