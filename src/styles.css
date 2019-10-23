@@ -256,6 +256,10 @@
     width: 1920px;
   }
 
+  .destacar {
+    background-color: greenyellow;
+  }
+
 
   /* Responsive Styles */
   @media screen and (max-width: 767px) {

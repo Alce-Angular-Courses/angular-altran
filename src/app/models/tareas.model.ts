@@ -13,8 +13,8 @@ export class TareasModel implements TareasInterface {
   } */
 
   constructor (
-    public nombre: string,
-    public isCompleted: boolean) {
+    public nombre: string = '',
+    public isCompleted: boolean = false) {
 
     }
 }
