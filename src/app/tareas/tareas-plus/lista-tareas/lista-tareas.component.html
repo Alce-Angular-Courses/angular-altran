@@ -1,1 +1,12 @@
-<p>lista-tareas works!</p>
+<h2 >Lista de Tareas</h2>
+<alt-new-tarea (addTarea)="onAddTarea($event)" [altDestacar]="'Importante'"></alt-new-tarea>
+
+<div *ngIf="aTareas.length">
+  <h2>Lista de tareas</h2>
+  <ul>
+    <li *ngFor="let item of aTareas; let i=index">
+      <alt-tarea [tarea]="item" [index]="i" (delete)="onDeleteTarea($event)"></alt-tarea>
+    </li>
+  </ul>
+</div>
+
