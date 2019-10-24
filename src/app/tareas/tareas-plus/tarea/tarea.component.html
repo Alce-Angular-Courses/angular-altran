@@ -1,5 +1,4 @@
 <input type="checkbox" [id]="'estado_'+index" [(ngModel)]="tarea.isCompleted">
- -
-{{ tarea.nombre}}
+ - <span class="tarea" [ngClass]="{completed: tarea.isCompleted}">{{ tarea.nombre}} </span>
 <span (click)="onDelete()" class="boton">🗑</span>
 

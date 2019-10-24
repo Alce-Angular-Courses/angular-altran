@@ -4,7 +4,7 @@ import { TareasModel } from 'src/app/models/tareas.model';
 @Component({
   selector: 'alt-tarea',
   templateUrl: './tarea.component.html',
-  styleUrls: ['./tarea.component.css'],
+  styleUrls: ['./tarea.component.css', '../lista-tareas/lista-tareas.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TareaComponent implements OnInit {

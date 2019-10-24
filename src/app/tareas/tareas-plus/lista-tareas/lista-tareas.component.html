@@ -1,5 +1,5 @@
-<h2 >Lista de Tareas</h2>
-<alt-new-tarea (addTarea)="onAddTarea($event)" [altDestacar]="'Importante'"></alt-new-tarea>
+<h2 [altDestacar]="'Importante'">Lista de Tareas</h2>
+<alt-new-tarea (addTarea)="onAddTarea($event)"></alt-new-tarea>
 
 <div *ngIf="aTareas.length">
   <h2>Lista de tareas</h2>
