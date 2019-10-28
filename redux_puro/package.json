@@ -1,5 +1,5 @@
 {
-  "name": "redux",
+  "name": "redux_puro",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,5 +9,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "redux": "^4.0.4"
+  }
 }
