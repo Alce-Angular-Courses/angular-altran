@@ -25,7 +25,7 @@ const reducer: Reducer<number> = (oldStado: number, action: Action | ActionPlus)
 
 const store: Store = createStore<number, null, null, null>(reducer, 0);
 console.log('Estado inicial', store.getState())
-store.subscribe( (x) => console.log(store.getState()));
+store.subscribe( () => console.log(store.getState()));
 store.dispatch(INCREMENT);
 store.dispatch(DECREMENT);
 store.dispatch(PLUS10);
