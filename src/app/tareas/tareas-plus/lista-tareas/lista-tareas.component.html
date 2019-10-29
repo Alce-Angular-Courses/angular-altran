@@ -5,7 +5,8 @@
   <h2>Lista de tareas</h2>
   <ul>
     <li *ngFor="let item of aTareas; let i=index">
-      <alt-tarea [tarea]="item" [index]="i" (delete)="onDeleteTarea($event)"></alt-tarea>
+      <alt-tarea [tarea]="item" [index]="i" (delete)="onDeleteTarea($event)"
+        (check)="onCheckTarea($event)"></alt-tarea>
     </li>
   </ul>
 </div>

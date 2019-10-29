@@ -12,16 +12,23 @@ export class TareaComponent implements OnInit {
   @Input() tarea: TareasModel;
   @Input() index: number;
   @Output() delete: EventEmitter<number>;
+  @Output() check: EventEmitter<number>
 
   constructor() {
       this.delete = new EventEmitter();
+      this.check = new EventEmitter();
   }
 
   ngOnInit() {
+    this.tarea = {...this.tarea};
+    console.log(this.tarea)
   }
 
   onDelete() {
     this.delete.next(this.index);
   }
 
+  onChange() {
+    this.check.next(this.index);
+  }
 }
