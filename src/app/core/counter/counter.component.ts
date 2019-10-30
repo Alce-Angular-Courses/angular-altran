@@ -11,8 +11,14 @@ import { Observable } from 'rxjs';
 export class CounterComponent implements OnInit {
 
   counterValue$: Observable<any>;
+  counterValue: number;
+
   constructor(public store: Store<AppState>) {
   this.counterValue$ = this.store.select('counter')
+  this.store.select('counter').subscribe(
+    (data) => { this.counterValue = data; }
+  )
+
   }
 
   ngOnInit() {

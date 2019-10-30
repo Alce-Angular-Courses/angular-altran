@@ -8,13 +8,17 @@ import { TareasSimpleComponent } from './tareas-simple/tareas-simple.component';
 import { TareasPlusModule } from './tareas-plus/tareas-plus.module';
 import { InstruccionesComponent } from './instrucciones/instrucciones.component';
 import { ShareModule } from '../share/share.module';
+import { ListaComponent } from './lista/lista.component';
+import { NuevaComponent } from './nueva/nueva.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [TareasComponent, MenuComponent, TareasSimpleComponent, InstruccionesComponent],
+  declarations: [TareasComponent, MenuComponent, TareasSimpleComponent, InstruccionesComponent, ListaComponent, NuevaComponent],
   imports: [
     CommonModule,
     ShareModule,
+    ReactiveFormsModule,
     TareasRoutingModule,
     TareasPlusModule
   ]
